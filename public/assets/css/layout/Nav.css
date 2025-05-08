@@ -1,0 +1,31 @@
+nav {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 100vh;
+}
+
+.nav__container {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.nav__container__page {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(84, 90, 97);
+    cursor: pointer;
+}
+
+.nav__container__page:hover {
+    background-color: rgb(222, 255, 254);
+}
+
+.nav__container__page i {
+    margin-left: 10px;
+}
+
+.nav__container__page p {
+    margin-left: 10px;
+}
