@@ -22,7 +22,7 @@ export class AccueilView {
 
                 </div>
                 <div class="home__presentation__container__right">
-                    <img src="./assets/pictures/bg/3657664.jpg" />
+                    <img src="/public/assets/pictures/images/3657664.jpg" />
                     <p><span class="bold-red">"</span>Je transforme ma passion pour le développement en solutions utiles et accessibles.<span class="bold-red">"</span></p>
 
                 </div>
@@ -37,7 +37,7 @@ export class AccueilView {
                         class="bold">élargir mes compétences</span> et de mettre mes
                     <span class="bold">connaissances au service des autres</span>.
                 </div>
-                <a href="./html/projects.html"><button class="btn"><i class="fa-solid fa-person-chalkboard"></i>Voir mes projets</button></a>
+                <a href="/projets" data-link><button class="btn"><i class="fa-solid fa-person-chalkboard"></i>Voir mes projets</button></a>
             </div>
             `;
         }

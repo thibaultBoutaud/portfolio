@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65211b898e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="/public/assets/css/index.css" />
     <title>Accueil - Portfolio Thibault Boutaud</title>
 </head>
@@ -16,25 +17,54 @@
         </div>
         <div class="header__end">
             <div class="header__socialMedias">
-                <a href="https://www.linkedin.com/in/tb86000/"><img src="../assets/pictures/logos/linkedin.png"
+                <a href="https://www.linkedin.com/in/tb86000/"><img src="/public/assets/pictures/logos/linkedin.png"
                         alt="logo linkedin" /></a>
-                <a href="https://github.com/krommmm/"><img src="../assets/pictures/logos/github.png"
+                <a href="https://github.com/krommmm/"><img src="/public/assets/pictures/logos/github.png"
                         alt="logo github" /></a>
             </div>
             <div class="header__me">
                 <div class="dark">
                     <div class="darkMode"></div>
                 </div>
-                <img src="../assets/pictures/avatar/me_2.png" alt="avatar" />
+                <img src="/public/assets/pictures/avatar/me_2.png" alt="avatar" />
                 <i class="fa-solid fa-bars bars_menu"></i>
             </div>
         </div>
     </header>
     <main>
-        <nav></nav>
+        <nav>
+            <div class="nav__container">
+                <a href="/accueil" data-link>
+                    <div class="nav__container__page">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="/competences" data-link>
+                    <div class="nav__container__page">
+                        <i class="fa-solid fa-wrench"></i>
+                        <p>Skills</p>
+                    </div>
+                </a>
+                <a href="/projets" data-link>
+                    <div class="nav__container__page">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <p>Projects</p>
+                    </div>
+                </a>
+                <a href="/contact" data-link>
+                    <div class="nav__container__page">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Contact</p>
+                    </div>
+                </a>
+
+            </div>
+        </nav>
         <section id="root"></section>
     </main>
     <footer></footer>
+    <script type="module" src="/public/js/index.js"></script>
 </body>
 
 </html>
