@@ -46,7 +46,7 @@ export class NavigationManager {
     }
 
     init() {
-        const initialPage = this.getPageFromURL() || 'Accueil';
+        const initialPage = this.getPageFromURL() || 'accueil';
         this.navigate(initialPage, false);
     }
 }

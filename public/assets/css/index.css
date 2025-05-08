@@ -1,5 +1,7 @@
 @import "./miseEnPage.css";
 @import "./utils.css";
+@import "./animation.css";
+@import "./mediaQueries.css";
 
 /* layout */
 @import "./layout/header.css";
