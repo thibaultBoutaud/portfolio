@@ -1,4 +1,7 @@
 export class ContactView {
+    constructor(debouncer){
+        this.debouncer = debouncer;
+    }
 
     render() {
         const el = document.getElementById("root");
@@ -17,7 +20,7 @@ export class ContactView {
                         <div class="contact__numeros">
                             <div class="btn cv">CV</div>
                             <div class="btn email" data-info="thibault.boutaud@gmx.fr">Email</div>
-                            <div class="btn phoneNumber" data-info="0650474178">Phone number</div>
+                            <div class="btn phoneNumber" data-info="0650474178">Phone number</div> 
                             <div class="copied">copied !</div>
                         </div>
                     </div>

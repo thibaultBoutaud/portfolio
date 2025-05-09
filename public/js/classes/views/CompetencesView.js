@@ -15,23 +15,11 @@ export class CompetencesView {
                     <div class="skills__presentation__container__imgs"></div>
                     <div class="skills__presentation__container__fiche"></div>
                 </div>
-            </div>
+            </div> 
             `;
             const container = document.querySelector(".skills__presentation__container");
             this.displaySkills(container);
             this.displayFicheSkill(container, 1);
-
-            document.addEventListener('click', (e)=>{
-                const el = e.target.closest('.skills__presentation__container__imgs--img');
-
-                if(el){
-                    let myContainer = document.querySelector(".skills__presentation__container");
-                    const ficheId = el.getAttribute("data-id");
-                    this.displayFicheSkill(myContainer, ficheId);
-                }
-            })
-
-
         }
     }
 

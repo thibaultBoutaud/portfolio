@@ -10,16 +10,24 @@ import { ContactCtrl } from "./classes/controllers/ContactCtrl.js";
 
 import { NavigationManager } from "./classes/core/NavigationManager.js";
 import { NavigationEventBinder } from "./classes/core/NavigationEventBinder.js";
+import { CompetencesEventBinder } from "./classes/core/CompetencesEventBinder.js";
+
+import { Debouncer } from "./classes/utils/Debouncer.js";
+
+const debouncer = new Debouncer();
 
 const accueilView = new AccueilView();
 const competencesView = new CompetencesView();
-const projetsView = new ProjetsView();
-const contactView = new ContactView();
+const projetsView = new ProjetsView(); 
+const contactView = new ContactView(debouncer);
+
+const competencesEventBinder = new CompetencesEventBinder(competencesView);
 
 const accueilCtrl = new AccueilCtrl(accueilView);
-const competencesCtrl = new CompetencesCtrl(competencesView);
+const competencesCtrl = new CompetencesCtrl(competencesView, competencesEventBinder);
 const projetsCtrl = new ProjetsCtrl(projetsView);
 const contactCtrl = new ContactCtrl(contactView);
+
 
 const routes = {
     'accueil': accueilCtrl,
