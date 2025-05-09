@@ -1,7 +1,7 @@
 export class ContactView {
-    constructor(debouncer){
-        this.debouncer = debouncer;
-    }
+  constructor(copyInfos){
+    this.copyInfos = copyInfos;
+  }
 
     render() {
         const el = document.getElementById("root");
@@ -28,5 +28,14 @@ export class ContactView {
             </div>
             `;
         }
+    }
+
+    dllCv() {
+        const link = document.createElement("a");
+        link.href = "/public/assets/files/cv_thibault.pdf";
+        link.download = "cv_thibault.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 }

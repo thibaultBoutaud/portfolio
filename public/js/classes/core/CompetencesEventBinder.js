@@ -1,6 +1,6 @@
 export class CompetencesEventBinder {
-    constructor(view){
-        this.view = view;
+    constructor(view) {
+        this.view = view; 
     }
 
 
