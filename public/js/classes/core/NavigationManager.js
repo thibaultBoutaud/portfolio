@@ -7,6 +7,8 @@ export class NavigationManager {
             const page = event.state?.page || this.getPageFromURL();
             this.navigate(page, null);
         });
+
+ 
     }
 
     getPageFromURL() {
@@ -31,7 +33,8 @@ export class NavigationManager {
     }
 
     navigate(pageKey, push = true) {
-        const controller = this.routes[pageKey];
+        const pageKeyWithoutParams = pageKey.split("?")[0];
+        const controller = this.routes[pageKeyWithoutParams];
 
         if (!controller) {
             this.show404();
@@ -39,7 +42,8 @@ export class NavigationManager {
         }
 
         if (push) {
-            const url = `/${pageKey}`;
+             const url = `/${pageKey.replace('_', '/')}`;
+            console.log(pageKey);
             history.pushState({ page: pageKey }, '', url);
         }
         
