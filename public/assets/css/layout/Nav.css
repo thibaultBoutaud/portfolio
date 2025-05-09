@@ -29,3 +29,9 @@ nav {
 .nav__container__page p {
     margin-left: 10px;
 }
+
+.active{
+    font-weight:600;
+    color:black;
+    background-color: rgba(0, 0, 0, 0.1);
+}

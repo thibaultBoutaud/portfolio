@@ -1,6 +1,7 @@
 export class NavigationManager {
-    constructor(routes) {
+    constructor(routes, navHighLighter) {
         this.routes = routes;
+        this.navHighLighter = navHighLighter;
 
         window.addEventListener('popstate', (event) => {
             const page = event.state?.page || this.getPageFromURL();
@@ -41,8 +42,9 @@ export class NavigationManager {
             const url = `/${pageKey}`;
             history.pushState({ page: pageKey }, '', url);
         }
-
+        
         controller.show();
+        this.navHighLighter.highlight(pageKey);
     }
 
     init() {

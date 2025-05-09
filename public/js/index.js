@@ -12,6 +12,7 @@ import { NavigationManager } from "./classes/core/NavigationManager.js";
 import { NavigationEventBinder } from "./classes/core/NavigationEventBinder.js";
 import { CompetencesEventBinder } from "./classes/core/CompetencesEventBinder.js";
 import { ContactEventBinder } from "./classes/core/ContactEventBinder.js";
+import { NavHighlighter } from "./classes/core/NavHighlighter.js"
 
 import { Debouncer } from "./classes/utils/Debouncer.js"; 
 import { CopyInfos } from "./classes/utils/CopyInfos.js";
@@ -40,7 +41,8 @@ const routes = {
     'contact': contactCtrl,
 }
 
-const navigationManager = new NavigationManager(routes);
+const navHighlighter = new NavHighlighter();
+const navigationManager = new NavigationManager(routes, navHighlighter);
 navigationManager.init();
 
 const navigationEventBinder = new NavigationEventBinder(navigationManager);
