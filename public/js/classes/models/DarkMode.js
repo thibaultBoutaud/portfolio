@@ -2,7 +2,7 @@
 
 export class DarkMode {
     constructor() {
-        this.mode = true;
+        this.mode = false;
     }
 
     darkTheme() {
