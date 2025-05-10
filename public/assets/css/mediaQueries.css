@@ -41,13 +41,17 @@
         flex-direction: column-reverse;
         width: 100vw;
     }
-    html .focus__footer__pictures__slideContainer img{
+
+    html .focus__footer__pictures__slideContainer img {
         width: 100%;
     }
-    html .focus__footer__pictures__slideContainer{
+
+    html .focus__footer__pictures__slideContainer {
         width: 100%;
     }
-    html .carrouselleLeft, html .carrouselleRight{
+
+    html .carrouselleLeft,
+    html .carrouselleRight {
         width: 50%;
     }
 }
@@ -60,6 +64,10 @@
 
 
 @media screen and (max-width: 524px) {
+    #root {
+        width: 100%;
+    }
+
     html .rectangle-small {
         margin: 30px auto;
     }
@@ -77,6 +85,7 @@
     html .project-focus__head__btns a {
         text-align: center;
     }
+
     html .projects__presentation__container__project {
         display: flex;
         justify-content: space-between;
@@ -84,29 +93,33 @@
     }
 }
 
-@media screen and (max-width: 972px){
-    html body .home__presentation__container__right{
-        display:none;
+@media screen and (max-width: 972px) {
+    html body .home__presentation__container__right {
+        display: none;
     }
 }
-@media screen and (max-width: 1240px){
-   html .skills__presentation__container {
+
+@media screen and (max-width: 1240px) {
+    html .skills__presentation__container {
         display: flex;
         flex-direction: column;
-      }
-      html .skills__presentation__container__imgs {
+    }
+
+    html .skills__presentation__container__imgs {
         display: flex;
         width: 100%;
         height: 100%;
         flex-wrap: wrap;
         margin-bottom: 30px;
-      }
-      html .skills__presentation__container__fiche{
+    }
+
+    html .skills__presentation__container__fiche {
         border: none;
-      }
+    }
 }
-@media screen and (max-width: 738px){
-    html .skills__presentation__container__fiche{
+
+@media screen and (max-width: 738px) {
+    html .skills__presentation__container__fiche {
         flex-direction: column;
     }
 }
