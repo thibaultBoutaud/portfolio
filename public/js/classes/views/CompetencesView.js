@@ -40,13 +40,17 @@ export class CompetencesView {
         let ficheSkillContainer = document.querySelector(".skills__presentation__container__fiche");
         if(!ficheSkillContainer) return;
         ficheSkillContainer.innerHTML = "";
+        const imgContainer = document.createElement("div");
+        imgContainer.className="ficheSkill_imgContainer";
+
         const ficheImg = document.createElement("img");
         ficheImg.src = `/public/assets/pictures/skills/${currentFiche.imgName}`;
+        imgContainer.appendChild(ficheImg);
         const ficheText = document.createElement("div");
         // name
         const name = document.createElement("h3");
         name.textContent = currentFiche.name;
-        ficheText.appendChild(name);
+        imgContainer.appendChild(name);
         // use
         const h4Use = document.createElement("h4");
         h4Use.textContent = "Utilisation";
@@ -86,7 +90,7 @@ export class CompetencesView {
         ficheText.appendChild(approche);
 
 
-        ficheSkillContainer.appendChild(ficheImg);
+        ficheSkillContainer.appendChild(imgContainer);
         ficheSkillContainer.appendChild(ficheText);
         container.appendChild(ficheSkillContainer);
     }

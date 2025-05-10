@@ -9,7 +9,7 @@
     padding-left: 15px;
     justify-content: space-between;
     align-items: flex-start;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .skills__presentation__container__skill {
@@ -142,4 +142,18 @@
 
 .skills__presentation__container__fiche h4 {
     margin-top: 5px;
+}
+
+.ficheSkill_imgContainer {
+    position: relative;
+}
+
+.ficheSkill_imgContainer h3 {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    background-color:white;
 }
