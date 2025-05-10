@@ -19,6 +19,7 @@ import { ContactEventBinder } from "./classes/core/ContactEventBinder.js";
 import { NavHighlighter } from "./classes/core/NavHighlighter.js"
 import { ProjetEventBinder } from "./classes/core/ProjetEventBinder.js";
 import { NavMobileEventBinder } from "./classes/core/NavMobileEventBinder.js";
+import { SeoManager } from "./classes/core/SeoManager.js";
 
 import { Debouncer } from "./classes/utils/Debouncer.js";
 import { CopyInfos } from "./classes/utils/CopyInfos.js";
@@ -28,6 +29,7 @@ import { DarkMode } from "./classes/models/DarkMode.js";
 
 const carrouselle = new Carrouselle();
 const darkMode = new DarkMode();
+const seoManager = new SeoManager();
 
 const debouncer = new Debouncer(300);
 const copyInfos = new CopyInfos();
@@ -44,11 +46,11 @@ const contactEventBinder = new ContactEventBinder(contactView, debouncer);
 const projetEventBinder = new ProjetEventBinder(projetView);
 const navMobileEventBinder = new NavMobileEventBinder(navMobileView);
 
-const accueilCtrl = new AccueilCtrl(accueilView);
-const competencesCtrl = new CompetencesCtrl(competencesView, competencesEventBinder);
-const projetsCtrl = new ProjetsCtrl(projetsView);
-const contactCtrl = new ContactCtrl(contactView, contactEventBinder);
-const projetCtrl = new ProjetCtrl(projetView, projetEventBinder);
+const accueilCtrl = new AccueilCtrl(accueilView, seoManager);
+const competencesCtrl = new CompetencesCtrl(competencesView, competencesEventBinder, seoManager);
+const projetsCtrl = new ProjetsCtrl(projetsView, seoManager);
+const contactCtrl = new ContactCtrl(contactView, contactEventBinder, seoManager);
+const projetCtrl = new ProjetCtrl(projetView, projetEventBinder, seoManager);
 new NavMobileCtrl(navMobileView, navMobileEventBinder);
 
 
