@@ -90,7 +90,7 @@ export const projects = [
         img: "portfolio.png",
         techno_logos: ["js.png", "poo.png"],
         isOnline: true,
-        github_url: "https://github.com/thibaultBoutaud/portfoliotb.git",
+        github_url: "https://github.com/thibaultBoutaud/portfolio.git",
         site_url: "https://portfoliotb.netlify.app/",
         fonctionalities: [
             "Projet en JS (Poo) et css (BEM)",
