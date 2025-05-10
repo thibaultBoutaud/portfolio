@@ -24,8 +24,10 @@ import { Debouncer } from "./classes/utils/Debouncer.js";
 import { CopyInfos } from "./classes/utils/CopyInfos.js";
 
 import { Carrouselle } from "./classes/models/Carrouselle.js";
+import { DarkMode } from "./classes/models/DarkMode.js";
 
 const carrouselle = new Carrouselle();
+const darkMode = new DarkMode();
 
 const debouncer = new Debouncer(300);
 const copyInfos = new CopyInfos();
@@ -35,7 +37,7 @@ const competencesView = new CompetencesView();
 const projetsView = new ProjetsView();
 const contactView = new ContactView(copyInfos);
 const projetView = new ProjetView(carrouselle);
-const navMobileView = new NavMobileView();
+const navMobileView = new NavMobileView(darkMode);
 
 const competencesEventBinder = new CompetencesEventBinder(competencesView);
 const contactEventBinder = new ContactEventBinder(contactView, debouncer);

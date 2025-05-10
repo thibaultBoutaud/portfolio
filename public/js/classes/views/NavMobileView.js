@@ -1,4 +1,7 @@
 export class NavMobileView {
+    constructor(darkMode){
+        this.darkMode = darkMode;
+    }
 
 
     display() {
