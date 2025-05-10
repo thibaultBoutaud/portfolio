@@ -43,7 +43,6 @@ export class NavigationManager {
 
         if (push) {
              const url = `/${pageKey.replace('_', '/')}`;
-            console.log(pageKey);
             history.pushState({ page: pageKey }, '', url);
         }
         

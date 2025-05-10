@@ -22,13 +22,13 @@ import { CopyInfos } from "./classes/utils/CopyInfos.js";
 
 import { Carrouselle } from "./classes/models/Carrouselle.js";
 
-const carrouselle = new Carrouselle();
+const carrouselle = new Carrouselle(); 
 
 const debouncer = new Debouncer(300);
 const copyInfos = new CopyInfos();
 
 const accueilView = new AccueilView();
-const competencesView = new CompetencesView();
+const competencesView = new CompetencesView(); 
 const projetsView = new ProjetsView(); 
 const contactView = new ContactView(copyInfos);
 const projetView = new ProjetView(carrouselle);

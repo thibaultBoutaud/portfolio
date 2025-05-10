@@ -1,30 +1,50 @@
 export class Carrouselle {
     constructor() {
-        this.carrouselle = document.querySelector(".focus__footer__pictures__slideContainer");
+        this.carrouselle = null;
         this.cpt = 0;
-        this.largeurSlide = this.getSlideWidth();
+        this.largeurSlide = 0;
         this.transfert = 0;
-        this.init();
+        this.isInitialized = false;
     }
 
-    init() {
-        if(!this.carrouselle) return;
-        setTimeout(() => {
-            const clone = this.carrouselle.firstElementChild.cloneNode(true);
-            this.carrouselle.appendChild(clone);
-        }, 1000);
+init() {
+    if (this.isInitialized) return;
+    this.isInitialized = true;
+
+    this.carrouselle = document.querySelector(".focus__footer__pictures__slideContainer");
+    this.largeurSlide = this.getSlideWidth();
+
+    if (!this.carrouselle || this.carrouselle.children.length === 0) {
+        this.carrouselle = null;
+        return;
     }
+
+    setTimeout(() => {
+        const clone = this.carrouselle.firstElementChild.cloneNode(true);
+        this.carrouselle.appendChild(clone);
+    }, 1000);
+}
+
+    reset() {
+        this.isInitialized = false;
+        this.cpt = 0;
+        this.transfert = 0;
+        this.carrouselle = document.querySelector(".focus__footer__pictures__slideContainer");
+        if (this.carrouselle) {
+            this.carrouselle.innerHTML = '';
+        }
+    }
+
 
 
     getSlideWidth() {
         const frame = document.querySelector(".focus__footer__pictures__frame");
-        if (!frame) return;
-        const frameWidth = frame.offsetWidth;
-        return frameWidth;
+        if (!frame) return 0;
+        return frame.offsetWidth;
     }
 
     turnLeft() {
-        console.log("coucou");
+        if (!this.carrouselle) return;
         this.cpt--;
         if (this.cpt < 0) {
             setTimeout(() => {
@@ -43,6 +63,7 @@ export class Carrouselle {
     }
 
     turnRight() {
+        if (!this.carrouselle) return;
         this.cpt++;
         if (this.cpt == this.carrouselle.childElementCount - 1) {
             setTimeout(() => {

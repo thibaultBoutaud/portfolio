@@ -1,7 +1,7 @@
 import { projects } from "../../data/projects.js";
 
 export class ProjetView {
-    constructor(carrouselle){
+    constructor(carrouselle) {
         this.carrouselle = carrouselle;
     }
 
@@ -48,7 +48,10 @@ export class ProjetView {
             `;
         }
 
-        this.displayProject();
+        this.carrouselle.reset();    
+        this.displayProject();      
+        this.carrouselle.init();     
+
     }
 
     getUrlId() {
@@ -105,7 +108,6 @@ export class ProjetView {
         });
 
         const slideContainer = document.querySelector(".focus__footer__pictures__slideContainer");
-        console.log(project.github)
         project.github_img.forEach((imgG) => {
             const slide = document.createElement("img");
             slide.src = `/public/assets/pictures/github/${imgG}`;
