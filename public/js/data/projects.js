@@ -90,9 +90,8 @@ export const projects = [
         github_url: "https://github.com/thibaultBoutaud/gestionnaire-revision.git",
         site_url: "https://boxrevision.netlify.app/",
         fonctionalities: [
-            "Projet en Js (poo) & css (BEM)",
+            "SPA sans système de routes en Js (poo) & css (BEM)",
             "L'application permet d'enregistrer des leçons à réviser et de les afficher selon le principe de la répétition espacée.",
-            "Respect des principes SOLID",
             "Pagination (url)",
             "Application 100% dynamique",
             "Agenda",
@@ -112,6 +111,7 @@ export const projects = [
         github_url: "https://github.com/thibaultBoutaud/to-do-list",
         site_url: "https://todolistmulti.netlify.app",
         fonctionalities: [
+            "SPA sans système de routes en Js et css",
             "Gestion des tâches avec des dates d'échéance.",
             "Intégration d'un calendrier pour visualiser les tâches planifiées.",
             "Possibilité de classer les tâches par priorité.",
