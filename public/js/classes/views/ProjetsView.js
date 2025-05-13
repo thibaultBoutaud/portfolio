@@ -66,7 +66,7 @@ export class ProjetsView {
             buttonA.setAttribute("data-link", "true");
             const btn = document.createElement("div");
             btn.className = `btn btn-blue`;
-            btn.textContent = "More ...";
+            btn.textContent = "Voir le projet";
             buttonA.appendChild(btn);
 
             fiche.appendChild(ficheLeft);
