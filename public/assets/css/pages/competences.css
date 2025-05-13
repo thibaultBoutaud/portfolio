@@ -82,7 +82,8 @@
     display: flex;
     align-items: start;
     margin-right: 30px;
-    border-left: 1px solid rgba(0, 0, 0, .3);
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    padding-top: 25px;
 }
 
 .skills__presentation__container__fiche img {
@@ -110,9 +111,9 @@
 }
 
 .skills__presentation__container__imgs img {
-    width: 75px;
-    height: 75px;
-    padding: 12px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
     object-fit: cover;
     transition: .6s;
     cursor: pointer;
@@ -132,9 +133,8 @@
 
 .skills__presentation__container__imgs {
     display: flex;
-    width: 240px;
-    height: 286px;
     flex-wrap: wrap;
+    margin-bottom: 21px;
 }
 
 .skills__presentation__container__fiche li {
@@ -156,5 +156,5 @@
     border: 1px solid black;
     padding: 10px;
     border-radius: 3px;
-    background-color:white;
+    background-color: white;
 }
