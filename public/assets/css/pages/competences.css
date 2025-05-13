@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
+    margin-top: 30px;
 }
 
 .skills__presentation__container__skill {

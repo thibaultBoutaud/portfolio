@@ -8,12 +8,6 @@
 
 
 /* WELCOME BOX */
-.home__welcome h2 {
-    font-weight: 600;
-    color: rgba(0, 0, 0, .8);
-    margin: 15px 20px 30px 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
 
 .home__welcome__presentation {
     margin: 15px 0px 15px 22px;
