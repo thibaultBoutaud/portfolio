@@ -24,6 +24,7 @@ export class ContactView {
                             <div class="copied">copied !</div>
                         </div>
                     </div>
+                    <img class="contact_avatar" src="/public/assets/pictures/avatar/me_1.png"/>
                 </div>
             </div>
             `;

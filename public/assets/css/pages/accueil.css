@@ -108,6 +108,11 @@
 .home__welcome  {
     max-width: 1000px;
 }
+.home__welcome__subtitle{
+    margin: 21px;
+  font-weight: 600;
+  color: grey;
+}
 
 .jump {
     animation-name: jump;

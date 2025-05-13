@@ -21,15 +21,12 @@ export class AccueilView {
                     </div>
 
                 </div>
-                <div class="home__presentation__container__right">
-                    <img src="/public/assets/pictures/images/3657664.jpg" />
-                    <p><span class="bold-red">"</span>Je transforme ma passion pour le développement en solutions utiles et accessibles.<span class="bold-red">"</span></p>
-
-                </div>
+               
             </div>
 
             <div class="home__welcome rectangle">
                 <h2>Presentation</h2>
+               <p class="home__welcome__subtitle">Je transforme ma passion pour le développement en solutions utiles et accessibles.</p>
                 <div class="home__welcome__presentation">
                     <span class="bold greenPale">Développeur en reconversion</span>, animé par une <span class="bold redPale">passion pour
                         la programmation</span>. <span class="bold redPale">Autonome, motivé</span> et
