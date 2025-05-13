@@ -24,6 +24,16 @@
     html .project-focus__head__right img {
         display: none;
     }
+
+    html .contact__container_big {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    html .contact__container__left {
+        max-width: 500px;
+        margin-top: 17px;
+    }
 }
 
 @media screen and (max-width: 600px) {
