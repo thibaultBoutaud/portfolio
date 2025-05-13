@@ -64,9 +64,6 @@
 }
 
 .btn-blue {
-    /* background-color: rgb(31, 136, 61);
-    color: white;
-    */
     font-weight: 500;
     border: 2px solid rgb(9, 105, 218);
     background-color: white;
@@ -74,8 +71,8 @@
 }
 
 .btn-blue:hover {
-    background-color: rgb(37, 150, 71);
-    color: white;
+    background-color: rgb(190, 249, 198);
+    color: black;
     border: 2px solid black;
 }
 
