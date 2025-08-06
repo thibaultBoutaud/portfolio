@@ -8,7 +8,6 @@ export class NavigationManager {
             this.navigate(page, null);
         });
 
- 
     }
 
     getPageFromURL() {

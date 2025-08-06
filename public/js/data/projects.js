@@ -1,5 +1,5 @@
 export const projects = [
-        {
+    {
         id: 1,
         name: "Portfolio",
         description: "Portfolio présentant mes projets personnels",
@@ -98,45 +98,6 @@ export const projects = [
             "Opérations CRUD",
             "Etat centralisé dans l'api du navigateur (localStorage)"
         ],
-         github_img: ["revi_0.png", "revi_1.png", "revi_2.png", "revi_3.png"]
-    },
-
-    {
-        id: 6,
-        name: "To-Do-List Agenda",
-        description: "Application pour gérer une to-do-list avec fonctionnalités d'agenda.",
-        img: "todoList.jpg",
-        techno_logos: ["react_logo.png", "nodejs_logo.png", "mongodb_logo.png"],
-        isOnline: true,
-        github_url: "https://github.com/thibaultBoutaud/to-do-list",
-        site_url: "https://todolistmulti.netlify.app",
-        fonctionalities: [
-            "SPA sans système de routes en Js et css",
-            "Gestion des tâches avec des dates d'échéance.",
-            "Intégration d'un calendrier pour visualiser les tâches planifiées.",
-            "Possibilité de classer les tâches par priorité.",
-            "Interface utilisateur intuitive et facile à utiliser.",
-            "Gestion centralisé par l'api du navigateur"
-        ],
-        github_img: ["todo_1.png", "todo_2.png", "todo_3.png"]
-    },
-    {
-        id: 7,
-        name: "Trieuse de films",
-        description: "Application pour organiser et trier des films selon divers critères.",
-        img: "netflix.jpg",
-        techno_logos: ["js.png", "nodejs_logo.png", "mongodb_logo.png"],
-        isOnline: false,
-        github_url: "https://github.com/thibaultBoutaud/trieuse-films.git",
-        site_url: null,
-        fonctionalities: [
-            "Application qui utilise React (vite), Node.js (Express) et MySQL.",
-            "Tri des films par genre, année, et popularité.",
-            "Recherche avancée avec filtres SQL.",
-            "Authentification par token.",
-            "Gestion des favoris pour les utilisateurs.",
-            "API RESTful."
-        ],
-        github_img: ["tri_1.png", "tri_2.png", "tri_3.png", "tri_4.png", "tri_5.png"]
+        github_img: ["revi_0.png", "revi_1.png", "revi_2.png", "revi_3.png"]
     }
 ];
