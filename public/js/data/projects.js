@@ -4,7 +4,7 @@ export const projects = [
         name: "Agenda Hôtelier",
         description: "Application hôtelière avec agenda et plannings",
         img: "hotel_accueil.png",
-        techno_logos: ["js.png", "poo.png"],
+        techno_logos: ["js.png", "poo.png","mySql.png"],
         isOnline: false,
         github_url: "https://github.com/thibaultBoutaud/hotel-manager.git",
         site_url: "",
