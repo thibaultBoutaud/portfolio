@@ -3,6 +3,8 @@ export class CompetencesCtrl {
         this.view = view;
         this.eventBinder = eventBinder;
         this.seoManager = seoManager;
+
+        this.eventBinder.setController(this);
     }
 
     show() {

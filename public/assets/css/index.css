@@ -1,7 +1,9 @@
-@import "./miseEnPage.css";
-@import "./utils.css";
-@import "./animation.css";
-@import "./mediaQueries.css";
+
+/* utils */
+@import "./utils/miseEnPage.css";
+@import "./utils/utils.css";
+@import "./utils/animation.css";
+@import "./utils/mediaQueries.css";
 
 /* layout */
 @import "./layout/header.css";

@@ -158,3 +158,114 @@
     border-radius: 3px;
     background-color: white;
 }
+
+/* description  */
+
+.skills__description__subTitles h2 {
+    margin-bottom: 15px;
+}
+
+.skills__description {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.skills__description ul {
+    padding: 15px;
+}
+
+.skills__description ul h3 {
+    cursor: pointer;
+}
+
+.skills__description ul li {
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.skills__description__details {}
+
+.skills__description__details__text {
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.skills__description__details__text p {
+    max-width: 350px;
+    font-size: 13px;
+}
+
+.skills__description__details__img img {
+    width: 350px;
+    height: 200px;
+    object-fit: fill;
+    cursor: pointer;
+    padding-left: 15px;
+    animation-name: appearsFromRight;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.appearsFromRight {
+    animation-name: appearsFromRight;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.subTitlesContainer {
+    overflow: hidden;
+}
+
+.skills__description__subTitles__fiche {
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.skills__description__subTitles__fiche ul {
+    transform: translateY(-100%);
+}
+
+.subTitlesContainer {}
+
+.skills__description__subTitles__fiche .subTitlesContainer {
+    height: 20px;
+}
+
+.activeFiche .subTitlesContainer {
+    height: auto;
+}
+
+.activeFiche ul {
+    transform: translateY(0%);
+    animation-name: goDownFromSky;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.skills__description__subTitles__fiche h3:hover {
+    color: rgb(4, 162, 159);
+}
+
+.skills__description__subTitles__fiche h3 {
+    transition-duration: .4s;
+}
+
+.activeFiche h3 {
+    color: rgb(4, 162, 159);
+}
+
+.activeFiche h3::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: rgb(4, 162, 159);
+    /* display: inline-block; */
+    margin-right: 6px;
+}
+
+.underline-green {
+    background-color: rgb(190, 249, 198);
+    padding: 3px;
+}

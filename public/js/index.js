@@ -21,6 +21,9 @@ import { ProjetEventBinder } from "./classes/core/ProjetEventBinder.js";
 import { NavMobileEventBinder } from "./classes/core/NavMobileEventBinder.js";
 import { SeoManager } from "./classes/core/SeoManager.js";
 
+// eventBinder
+import { SkillsEventBinder } from "./classes/eventBinder/SkillsEventBinder.js";
+
 import { Debouncer } from "./classes/utils/Debouncer.js";
 import { CopyInfos } from "./classes/utils/CopyInfos.js";
 
@@ -41,13 +44,13 @@ const contactView = new ContactView(copyInfos);
 const projetView = new ProjetView(carrouselle);
 const navMobileView = new NavMobileView(darkMode);
 
-const competencesEventBinder = new CompetencesEventBinder(competencesView);
+const skillsEventBinder = new SkillsEventBinder();
 const contactEventBinder = new ContactEventBinder(contactView, debouncer);
 const projetEventBinder = new ProjetEventBinder(projetView);
 const navMobileEventBinder = new NavMobileEventBinder(navMobileView);
 
 const accueilCtrl = new AccueilCtrl(accueilView, seoManager);
-const competencesCtrl = new CompetencesCtrl(competencesView, competencesEventBinder, seoManager);
+const competencesCtrl = new CompetencesCtrl(competencesView, skillsEventBinder, seoManager);
 const projetsCtrl = new ProjetsCtrl(projetsView, seoManager);
 const contactCtrl = new ContactCtrl(contactView, contactEventBinder, seoManager);
 const projetCtrl = new ProjetCtrl(projetView, projetEventBinder, seoManager);
