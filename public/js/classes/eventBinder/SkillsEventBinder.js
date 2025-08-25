@@ -22,7 +22,7 @@ export class SkillsEventBinder {
                     fiches.forEach((fiche) => fiche.classList.remove("activeFiche"));
                     fiche.classList.add("activeFiche");
                     const id = fiche.getAttribute("data-id");
-                    this.controller.view.displayDetails(id);
+                    this.controller.view.displayDetails(id); 
                 }
                 //  else {
                 //     fiche.classList.remove("activeFiche");
