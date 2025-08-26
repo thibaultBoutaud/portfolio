@@ -132,6 +132,10 @@
     html .skills__presentation__container__fiche {
         flex-direction: column;
     }
+
+    body .skills__description {
+        flex-direction: column-reverse;
+    }
 }
 
 

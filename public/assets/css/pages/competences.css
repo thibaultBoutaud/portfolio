@@ -194,6 +194,7 @@
 .skills__description__details__text p {
     max-width: 350px;
     font-size: 13px;
+    padding: 12px;
 }
 
 .skills__description__details__img img {
