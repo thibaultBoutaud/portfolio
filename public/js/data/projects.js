@@ -1,12 +1,12 @@
 export const projects = [
     {
         id: 1,
-        name: "Agenda Hôtelier",
+        name: "Agenda",
         description: "Application hôtelière avec agenda et plannings",
         img: "hotel_accueil.png",
         techno_logos: ["js.png", "poo.png","mySql.png"],
         isOnline: false,
-        github_url: "https://github.com/thibaultBoutaud/hotel-manager.git",
+        github_url: "https://github.com/thibaultBoutaud/agenda_perso.git",
         site_url: "",
         fonctionalities: [
             "Projet en JS (Poo) et css (BEM) et sql (mySql)",
