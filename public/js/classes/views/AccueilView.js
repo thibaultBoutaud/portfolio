@@ -16,25 +16,52 @@ export class AccueilView {
                             <p class="home__presentation__name__web jump">Web</p>
                         </div>
                     </div>
-                    <div class="">
-
+                    <div class="home__presentation__container__legend">
+                <h2>Je conçois des interfaces simples, performantes et accessibles,</h2>
+                <h2>avec une attention particulière à l'expérience utilisateur</h2>
                     </div>
 
                 </div>
                
             </div>
 
-            <div class="home__welcome rectangle">
-                <h2>Presentation</h2>
-               <p class="home__welcome__subtitle">Je transforme ma passion pour le développement en solutions utiles et accessibles.</p>
-                <div class="home__welcome__presentation">
-                    <span class="bold greenPale">Développeur en reconversion</span>, animé par une <span class="bold redPale">passion pour
-                        la programmation</span>. <span class="bold redPale">Autonome, motivé</span> et
-                    toujours prêt à <span class="bold greenPale">apprendre</span>, je m'efforce constamment d'<span
-                        class="bold greenPale">élargir mes compétences</span> et de mettre mes
-                    <span class="bold redPale">connaissances au service des autres</span>.
+            <div class="home__welcome"> 
+                <a href="/projets" data-link><button class="btn btn-projects"><i class="fa-solid fa-person-chalkboard"></i>Voir mes projets</button></a>
+                <a href="/projets" data-link><button class="btn btn-contact btn-red"><iclass="fa-solid fa-envelope"></i>Me contacter</button></a>
+            </div>
+            <div class="home__aPropos">
+                <h1>A propos de moi</h1>
+                <p class="home__aPropos__legend">Je me reconvertis dans le développement web pour transformer ma passion en métier.<br/>
+                Autonome, curieux et motivé, je prends plaisir à apprendre de nouvelles technologies<br/> et à les appliquer dans des projets concrets.</p>
+
+                <div class="home__aPropos__blocs">
+                     <div class="home__aPropos__blocs__top">
+
+                         <div class="home__aPropos__blocs__block">
+                             <h3>Développeur en reconversion</h3>
+                             <p>Des expériences précédentes qui m’apportent organisation, sens du contact et capacité d’adaptation.</p>
+                         </div>
+
+                       <div class="home__aPropos__blocs__block">
+                         <h3>En apprentissage continu</h3>
+                         <p>Veille, projets personnels et exercices réguliers pour progresser chaque jour.</p>
+                      </div>
+
+                    </div>
+
+                      <div class="home__aPropos__blocs__bottom">
+
+                         <div class="home__aPropos__blocs__block">
+                             <h3>Orienté utilisateur</h3>
+                             <p>J’aime comprendre les besoins réels afin de proposer des solutions intuitives et accessibles.</p>
+                         </div>
+
+                            <div class="home__aPropos__blocs__block">
+                             <h3>Centré sur la qualité</h3>
+                             <p>Je privilégie un code propre, maintenable et pensé pour l’expérience utilisateur.</p>
+                         </div>
+                      </div>
                 </div>
-                <a href="/projets" data-link><button class="btn"><i class="fa-solid fa-person-chalkboard"></i>Voir mes projets</button></a>
             </div>
             `;
         }

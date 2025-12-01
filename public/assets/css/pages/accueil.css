@@ -1,13 +1,14 @@
-
 .home__presentation {
     padding-left: 50px;
-    width: 95%;
     height: 300px;
     border-radius: 5px;
 }
 
 
 /* WELCOME BOX */
+.home__welcome {
+    padding-left: 50px;
+}
 
 .home__welcome__presentation {
     margin: 15px 0px 15px 22px;
@@ -98,20 +99,95 @@
 }
 
 .home__welcome button {
-    margin: 22px 28px;
+    margin: 22px 5px;
 }
+
+.home__welcome .btn-projects {
+    background-color: rgb(228, 87, 107);
+    border: none;
+    color: white;
+}
+
+.home__welcome .btn-contact {
+    background-color: rgb(228, 87, 107);
+    border: none;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.home__welcome .btn:before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    height: 311px;
+    width: 100px;
+    filter: blur(10px);
+    background: linear-gradient(to right, #ffffff3d 30%, #ffffff1a);
+    top: -30px;
+    transition-duration: 1.5s;
+    transform: translate(-200%) skew(-25deg);
+}
+
+.home__welcome .btn:hover:before {
+    transform: translateX(100%) skewX(-25deg);
+    transition-duration: 1s;
+}
+
+.home__welcome .btn-red:before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    height: 311px;
+    width: 100px;
+    filter: blur(10px);
+    background: linear-gradient(to right,
+            rgba(228, 87, 107, 0.4) 30%,
+            rgba(228, 87, 107, 0.15));
+    top: -30px;
+    transition-duration: 1.5s;
+    transform: translate(-200%) skew(-25deg);
+}
+
+body .home__welcome .btn-projects {
+    background-color: rgb(228, 87, 107);
+    border: none;
+    color: white;
+}
+
+body .home__welcome .btn-contact {
+    background-color: rgb(228, 87, 107);
+    border: none;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.home__presentation__container__legend {
+    color: #595757;
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.home__welcome .btn-red:hover:before {
+    transform: translateX(100%) skewX(-25deg);
+    transition-duration: 1s;
+}
+
 
 .home__welcome button i {
     margin-right: 10px;
 }
 
-.home__welcome  {
+.home__welcome {
     max-width: 1000px;
 }
-.home__welcome__subtitle{
+
+.home__welcome__subtitle {
     margin: 21px;
-  font-weight: 600;
-  color: grey;
+    font-weight: 600;
+    color: grey;
 }
 
 .jump {
@@ -132,6 +208,39 @@
 body .home__presentation .home__welcome {
     margin-top: 0px;
 }
+
+/* home aPropos */
+.home__aPropos {
+    padding-left: 50px;
+    margin-top: 25px;
+}
+
+.home__aPropos h1 {
+    font-size: 25px;
+}
+
+.home__aPropos p {
+    margin-top: 14px;
+}
+
+.home__aPropos__blocs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.home__aPropos__blocs__top,
+.home__aPropos__blocs__bottom {
+    display: flex;
+}
+
+.home__aPropos__blocs__block {
+    max-width: 371px;
+    margin: 15px 10px;
+}
+
+
 
 @keyframes growUp {
     0% {
