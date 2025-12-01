@@ -27,7 +27,7 @@ export class AccueilView {
 
             <div class="home__welcome"> 
                 <a href="/projets" data-link><button class="btn btn-projects"><i class="fa-solid fa-person-chalkboard"></i>Voir mes projets</button></a>
-                <a href="/projets" data-link><button class="btn btn-contact btn-red"><iclass="fa-solid fa-envelope"></i>Me contacter</button></a>
+                <a href="/contact" data-link><button class="btn btn-contact btn-red"><iclass="fa-solid fa-envelope"></i>Me contacter</button></a>
             </div>
             <div class="home__aPropos">
                 <h1>A propos de moi</h1>
