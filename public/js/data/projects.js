@@ -21,7 +21,7 @@ export const projects = [
     },
     {
         id: 2,
-        name: "Site web d'antiquaire",
+        name: "Site vitrine SSR",
         description: "Site web autogérable qui présente la galerie d'un antiquaire ainsi que des articles de journaux",
         img: "antiq.png",
         techno_logos: ["js.png", "react.png", "mySql.png"],

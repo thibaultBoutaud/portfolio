@@ -11,7 +11,7 @@ export const skillsData = [
     {
         id: 2,
         title: "Référencement Naturel (SEO)",
-        subTitle: ["Balises sémantiques", "Optimisation des images", "Liens externes et maillage logique", "Intégration d’outils de mesure (Google Analytics, Matomo, etc.)"],
+        subTitle: ["Balises sémantiques", "Optimisation des images", "Liens externes et maillage logique", "SSR, Meta-data, Json-LD, sitemap.xml, robots.txt","Intégration d’outils de mesure (Google Analytics, Matomo, etc.)"],
         description: `J’optimise la visibilité des sites web en travaillant la structure des balises sémantiques, l’optimisation des images et la mise en place d’un maillage interne logique. J’intègre également des outils d’analyse (Google Analytics, Matomo, etc.) pour mesurer et améliorer en continu les performances SEO.`,
         image: "seo.jpg",
         link_id: 1
