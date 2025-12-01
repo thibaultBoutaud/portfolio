@@ -30,7 +30,7 @@ export class AccueilView {
                 <a href="/contact" data-link><button class="btn btn-contact btn-red"><iclass="fa-solid fa-envelope"></i>Me contacter</button></a>
             </div>
             <div class="home__aPropos">
-                <h1>A propos de moi</h1>
+                <h1>À propos de moi</h1>
                 <p class="home__aPropos__legend">Je me reconvertis dans le développement web pour transformer ma passion en métier.<br/>
                 Autonome, curieux et motivé, je prends plaisir à apprendre de nouvelles technologies<br/> et à les appliquer dans des projets concrets.</p>
 
