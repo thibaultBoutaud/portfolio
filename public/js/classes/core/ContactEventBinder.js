@@ -20,6 +20,25 @@ export class ContactEventBinder {
         if (phoneButton) {
             phoneButton.addEventListener('click', (e) => this.handleClickPhone(e));
         }
+
+        const mailSubmitBtn = document.querySelector('.btn-submit');
+        if (mailSubmitBtn) {
+            mailSubmitBtn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                const form = mailSubmitBtn.closest('form');
+                const msg = form.elements['msg'].value;
+
+
+                const data = new FormData(form);
+
+                const res = await fetch('https://api-php.tbuilder.fr/mail.php', {
+                    method: 'POST',
+                    body: data
+                });
+                const json = await res.json();
+
+            })
+        }
     }
 
     handleClickCv() {

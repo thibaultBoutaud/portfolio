@@ -1,7 +1,7 @@
 export class ContactView {
-  constructor(copyInfos){
-    this.copyInfos = copyInfos;
-  }
+    constructor(copyInfos) {
+        this.copyInfos = copyInfos;
+    }
 
     render() {
         const el = document.getElementById("root");
@@ -26,6 +26,23 @@ export class ContactView {
                     </div>
                     <img class="contact_avatar" src="/public/assets/pictures/avatar/me_1.png"/>
                 </div>
+            </div>
+            <div class="formulaireMail rectangle">
+                <form>
+                                    <div>
+                        <label>name</label>
+                        <input type="text" name="name" />
+                    </div>
+                                        <div>
+                        <label>email</label>
+                        <input type="email" name="email" />
+                    </div>
+                    <div>
+                        <label>message</label>
+                        <input type="text" name="msg" />
+                    </div>
+                    <button type="button" class="btn-submit">Envoyer</button>
+                </form>
             </div>
             `;
         }

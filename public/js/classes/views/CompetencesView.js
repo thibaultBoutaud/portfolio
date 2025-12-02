@@ -21,7 +21,7 @@ export class CompetencesView {
                             <img src="/public/assets/pictures/skills/sql-logo.png" />
                             <img src="/public/assets/pictures/skills/host.jpg" />
                             <img src="/public/assets/pictures/skills/nextjs.png" />
-                             <img src="/public/assets/pictures/skills/n8n.jpg" />
+                            <img src="/public/assets/pictures/skills/n8n.jpg" />
                         </div>
                     </div>
                 </div> 
