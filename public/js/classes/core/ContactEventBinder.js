@@ -30,7 +30,7 @@ export class ContactEventBinder {
 
   
 
-                fetch('https://api-php.tbuilder.fr/mail.php', {
+               const preRes = await  fetch('https://api-php.tbuilder.fr/mail.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -39,7 +39,8 @@ export class ContactEventBinder {
                         message: form.elements['message'].value,
                     }),
                 });
-                const json = await res.json();
+                const res = await res.json();
+                console.log(res);
 
             })
         }
