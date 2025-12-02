@@ -19,7 +19,7 @@ export class ContactView {
                             n'hésitez pas à me <span class="bold redPale">contacter</span>.</p>
                         <div class="contact__numeros">
                             <div class="btn cv">CV</div>
-                            <div class="btn email" data-info="thibault.boutaud@gmx.fr">Email</div>
+                            <div class="btn email" data-info="thibault-boutaud@tbuilder.fr">Email</div>
                             <div class="btn phoneNumber" data-info="0650474178">Phone number</div> 
                             <div class="copied">copied !</div>
                         </div>
