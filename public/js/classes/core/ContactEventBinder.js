@@ -27,22 +27,32 @@ export class ContactEventBinder {
                 e.preventDefault();
                 const form = mailSubmitBtn.closest('form');
 
+                try {
+                    const response = await fetch('https://api-php.tbuilder.fr/mail.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            name: form.elements['name'].value,
+                            email: form.elements['email'].value,
+                            message: form.elements['message'].value,
+                        }),
+                    });
 
-  
+                    const res = await response.json();
+                    console.log('Réponse API :', res);
 
-               const preRes = await  fetch('https://api-php.tbuilder.fr/mail.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        name: form.elements['name'].value,
-                        email: form.elements['email'].value,
-                        message: form.elements['message'].value,
-                    }),
-                });
-                const res = await res.json();
-                console.log(res);
+                    if (res.success) {
+                        alert('Message envoyé !');
+                        form.reset();
+                    } else {
+                        alert('Erreur : ' + (res.error || 'Un problème est survenu.'));
+                    }
+                } catch (err) {
+                    console.error(err);
+                    alert('Erreur réseau, réessaie plus tard.');
+                }
+            });
 
-            })
         }
     }
 
