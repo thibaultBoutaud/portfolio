@@ -39,7 +39,7 @@ export class ContactView {
                     </div>
                     <div>
                         <label>message</label>
-                        <input type="text" name="msg" />
+                        <input type="text" name="message" />
                     </div>
                     <button type="button" class="btn-submit">Envoyer</button>
                 </form>

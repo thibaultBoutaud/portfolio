@@ -26,14 +26,18 @@ export class ContactEventBinder {
             mailSubmitBtn.addEventListener('click', async (e) => {
                 e.preventDefault();
                 const form = mailSubmitBtn.closest('form');
-                const msg = form.elements['msg'].value;
 
 
-                const data = new FormData(form);
+  
 
-                const res = await fetch('https://api-php.tbuilder.fr/mail.php', {
+                fetch('https://api-php.tbuilder.fr/mail.php', {
                     method: 'POST',
-                    body: data
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: form.elements['name'].value,
+                        email: form.elements['email'].value,
+                        message: form.elements['message'].value,
+                    }),
                 });
                 const json = await res.json();
 
