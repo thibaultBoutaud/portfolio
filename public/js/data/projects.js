@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        name: "Agenda",
+        name: "Agenda SPA",
         description: "Application hôtelière avec agenda et plannings",
         img: "hotel_accueil.png",
         techno_logos: ["js.png", "poo.png","mySql.png"],
@@ -24,7 +24,7 @@ export const projects = [
         name: "Site vitrine SSR",
         description: "Site web autogérable qui présente la galerie d'un antiquaire ainsi que des articles de journaux",
         img: "antiq.png",
-        techno_logos: ["js.png", "react.png", "mySql.png"],
+        techno_logos: ["js.png", "nextjs.png", "mySql.png"],
         isOnline: true,
         github_url: "https://github.com/thibaultBoutaud/antiq.git",
         site_url: "https://tbuilder.fr",
@@ -39,10 +39,10 @@ export const projects = [
     },
     {
         id: 3,
-        name: "Portfolio",
+        name: "Portfolio SPA + PHP",
         description: "Portfolio présentant mes projets personnels",
         img: "portfolio.png",
-        techno_logos: ["js.png", "poo.png"],
+        techno_logos: ["js.png", "poo.png", "php.png"],
         isOnline: true,
         github_url: "https://github.com/thibaultBoutaud/portfolio.git",
         site_url: "https://portfoliotb.netlify.app/",
@@ -60,7 +60,7 @@ export const projects = [
         name: "App culinaire",
         description: "Application pour recettes de cuisine",
         img: "cuisine_img.png",
-        techno_logos: ["react_logo.png", "nodejs_logo.png", "mysql_logo.png"],
+        techno_logos: ["react.png", "nodejs.png", "mySql.png"],
         isOnline: true, // css : circle circle-green  ou circle-red
         github_url: "https://github.com/thibaultBoutaud/cuisine.git",
         site_url: "https://cuisine-mu.vercel.app",
@@ -78,10 +78,10 @@ export const projects = [
     },
     {
         id: 5,
-        name: "Chat Msn",
+        name: "Chat Msn socket",
         description: "Réseau social avec messagerie instantanée",
         img: "msn_img.png",
-        techno_logos: ["react_logo.png", "nodejs_logo.png", "mysql_logo.png"],
+        techno_logos: ["react.png", "nodejs.png", "mySql.png"],
         isOnline: true,
         github_url: "https://github.com/thibaultBoutaud/msn.git",
         site_url: "https://msn-three.vercel.app",
@@ -98,10 +98,10 @@ export const projects = [
     },
     {
         id: 6,
-        name: "App e-commerce",
+        name: "App e-commerce MERN",
         description: "Application pour gestion de produits en ligne",
         img: "trendtangle.png",
-        techno_logos: ["react_logo.png", "nodejs_logo.png", "mongodb_logo.png"],
+        techno_logos: ["react.png", "nodejs.png", "mongodb_logo.png"],
         isOnline: false,
         github_url: "https://github.com/thibaultBoutaud/trendtangle.git",
         site_url: null, // Site non mentionné comme actif
