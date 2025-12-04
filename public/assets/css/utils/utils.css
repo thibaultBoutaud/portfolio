@@ -167,5 +167,6 @@
 }
 
 .bluePale {
-    color: rgb(4, 164, 187);
+  background-color: rgb(190, 249, 198);
+  padding: 3px;
 }

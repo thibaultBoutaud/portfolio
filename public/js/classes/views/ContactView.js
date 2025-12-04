@@ -26,10 +26,10 @@ render() {
                         Je suis ravi que vous ayez pris le temps de visiter mon
                         <span class="bold bluePale">portfolio</span> de
                         <span class="bold bluePale">développeur web</span>. Si vous avez des
-                        <span class="bold greenPale">questions</span>, des
-                        <span class="bold greenPale">commentaires</span>, ou si vous souhaitez
+                        questions, des
+                       commentaires, ou si vous souhaitez
                         simplement discuter de projets passionnants, n'hésitez pas à me
-                        <span class="bold redPale">contacter</span>.
+                        <span class="bold bluePale">contacter</span>.
                     </p>
 
                     <div class="contact__numeros">
