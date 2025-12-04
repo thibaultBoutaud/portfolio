@@ -25,7 +25,7 @@ export class ProjetView {
             <div class="project-large">
                 <div class="project-focus__main rectangle-small">
                     <div class="project-focus__main__head">
-                        <p class="focus-title">Functionalities</p>
+                        <p class="focus-title">Fonctionnalités</p>
                     </div>
                     <div class="project-focus__main__functionalities">
                         <ul></ul>
@@ -33,7 +33,7 @@ export class ProjetView {
                 </div>
                 <div class="project-focus__footer rectangle-small">
                     <div class="focus__footer__head">
-                        <p class="focus-title">Pictures</p>
+                        <p class="focus-title">Aperçu</p>
                     </div>
                     <!-- frame carrousel-->
                     <div class="focus__footer__pictures__frame">

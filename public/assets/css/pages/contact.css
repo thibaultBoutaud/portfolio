@@ -1,74 +1,244 @@
-.contact h3 {
-    font-size: 23px;
-    color: black;
-    margin: 17px 13px;
-}
-
-.contact__container_big {
+/* Layout général façon page GitHub, en flexbox */
+.contact-page {
+    max-width: 980px;
+    margin: 2.5rem auto 3rem;
     display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Cartes blanches type GitHub */
+.contact-card,
+.formulaireMail {
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 1.5rem 1.75rem;
+    box-shadow: none;
+}
+
+/* Colonnes flexibles */
+.contact-card {
+    flex: 1.1 1 0;
+}
+
+.formulaireMail {
+    flex: 1.3 1 0;
+}
+
+/* Header GitHub-like */
+.contact-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-card__title {
+    font-size: 1.4rem;
+    margin: 0 0 0.25rem;
+}
+
+.contact-card__subtitle {
+    margin: 0;
+    color: #57606a;
+    font-size: 0.9rem;
+}
+
+/* Texte du bloc de gauche */
+.contact-card__body h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #24292f;
+    margin: 0 0 0.75rem;
+}
+
+.contact-card__body p {
+    margin: 0 0 1.25rem;
+    line-height: 1.5;
+    color: #57606a;
+    font-size: 13px;
+}
+
+/* Avatar rond façon GitHub */
+.contact_avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #d0d7de;
+}
+
+/* Boutons d’action */
+.contact__numeros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     align-items: center;
-    width: 100%;
-    padding: 15px;
 }
 
-.contact__container__left {
-    max-width: 500px;
+.contact-page .btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    background-color: #f6f8fa;
+    color: #24292f;
+    cursor: pointer;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
 }
 
-.contact__container__left p {
-    margin-bottom: 15px;
-    line-height: 26px;
-    padding-left: 15px;
+.contact-page .btn {
+    background-color: rgb(228, 87, 107);
+    border: none;
+    color: #ffffff;
 }
 
-.contact__container__left img {
-    width: 200px;
-    margin: 0px 0px 21px 55px;
-}
-
-.contact_container__right {
-    width: 50%;
-}
-
-.contact_container__right img {
-    width: 75%;
-    border-radius: 15px;
-    margin: 56px;
-}
-
+/* Message "Copié" */
 .copied {
     display: none;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 5px;
-    color: black;
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+    border: 1px solid #d0d7de;
+    background-color: #208c3f;
+    color: white;
 }
 
 .showCopied {
     display: inline-block;
-    animation-name: copied;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: copied 2s linear forwards;
 }
 
-.contact_avatar {
-    width: 250px;
+/* Formulaire */
+.form-title {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem;
 }
 
+.form-subtitle {
+    margin: 0 0 1.5rem;
+    color: #57606a;
+    font-size: 13px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-form__row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    flex: 1;
+}
+
+.contact-form__field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #24292f;
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+    background-color: #f6f8fa;
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+    border-color: #0969da;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(9, 105, 218, 0.3);
+}
+
+.contact-form__field input::placeholder,
+.contact-form__field textarea::placeholder {
+    color: #8c959f;
+}
+
+/* Footer du formulaire */
+.contact-form__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-helper {
+    font-size: 0.8rem;
+    color: #8c959f;
+}
+
+/* Bouton envoyer (style GitHub vert) */
+.btn-submit {
+    background-color: #2da44e;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #ffffff;
+    padding: 0.45rem 0.95rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #2c974b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-page {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .contact-card,
+    .formulaireMail {
+        padding: 1.25rem;
+    }
+
+    .contact-form__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Animation */
 @keyframes copied {
     0% {
         opacity: 0;
-        transform: translateY(0px);
+        transform: translateY(0);
     }
 
     50% {
         opacity: 1;
-        transform: translateY(-20px);
+        transform: translateY(-8px);
     }
 
     100% {
         opacity: 0;
-        transform: translateY(-40px);
+        transform: translateY(-16px);
     }
 }
