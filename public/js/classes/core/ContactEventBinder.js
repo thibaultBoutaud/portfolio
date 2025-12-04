@@ -35,7 +35,7 @@ export class ContactEventBinder {
                             name: form.elements['name'].value,
                             email: form.elements['email'].value,
                             message: form.elements['message'].value,
-                            subject: form.elemnts['subject'].value
+                            subject: form.elements['subject'].value
                         }),
                     });
 
