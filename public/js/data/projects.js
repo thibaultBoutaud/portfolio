@@ -27,7 +27,7 @@ export const projects = [
         techno_logos: ["js.png", "nextjs.png", "mySql.png"],
         isOnline: true,
         github_url: "https://github.com/thibaultBoutaud/antiq.git",
-        site_url: "https://tbuilder.fr",
+        site_url: "https://marchantiq.fr",
         fonctionalities: [
             "Projet en React et mySql",
             "carouselle d'images", 
