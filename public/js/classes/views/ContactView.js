@@ -40,7 +40,7 @@ render() {
                         <button class="btn btn-info phoneNumber" data-info="0650474178">
                             Portable
                         </button>
-                        <span class="copied">Copié !</span>
+                        <span class="copied"><i class="fa-solid fa-circle-check"></i>&nbsp;Copié !</span>
                     </div>
                 </div>
             </section>
